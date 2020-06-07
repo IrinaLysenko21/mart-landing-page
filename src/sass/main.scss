@@ -1,6 +1,15 @@
 @import 'normalize.scss';
-@import 'base.scss';
 @import 'fonts.scss';
-@import './helpers/variables';
+@import 'font-awesome/fontawesome.scss';
+@import 'font-awesome/fa-solid.scss';
+@import './helpers/variables.scss';
+@import './helpers/placeholders.scss';
+@import 'base.scss';
 @import './components/container.scss';
 @import './components/header.scss';
+@import './components/logo.scss';
+@import './components/contact-info.scss';
+@import './components/user-menu.scss';
+@import './components/navigation.scss';
+@import './components/search.scss';
+@import './components/cart.scss';

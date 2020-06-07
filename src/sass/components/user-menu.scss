@@ -1,0 +1,21 @@
+.user-menu {
+  display: flex;
+  @extend %list;
+
+  &__item {
+    margin-right: 34px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    @extend %top-header-link;
+  }
+}
+
+.pe-7s-lock {
+  font-size: 14px;
+  margin-right: 10px;
+  color: $color-white;
+}

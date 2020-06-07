@@ -1,0 +1,33 @@
+.search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px;
+  width: 190px;
+
+  &__form {
+    visibility: hidden;
+  }
+
+  &__input {
+    width: 150px;
+    border: none;
+    border-bottom: 1px solid $text-color-dark-grey;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    @extend %button;
+  }
+
+  &__icon {
+    color: $text-color-dark-grey;
+  }
+}
+
+.visible {
+  visibility: visible;
+}

@@ -1,0 +1,32 @@
+.contact-info {
+  display: flex;
+  @extend %list;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-right: 34px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    @extend %top-header-link;
+  }
+}
+
+.pe-7s-call {
+  font-size: 20px;
+}
+
+.pe-7s-mail {
+  font-size: 25px;
+}
+
+.pe-7s-call,
+.pe-7s-mail {
+  margin-right: 10px;
+  color: $color-white;
+}

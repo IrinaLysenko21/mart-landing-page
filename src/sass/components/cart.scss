@@ -1,0 +1,37 @@
+.cart {
+  display: flex;
+
+  &__text,
+  &__sum {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__sum {
+    margin-right: 8px;
+  }
+
+  &__quantity {
+    position: relative;
+    @extend %center-alignment;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: $color-green;
+    background-color: $color-white;
+    border: 1px solid $text-color-dark-grey;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -50%;
+      width: 14px;
+      height: 14px;
+      border: 1px solid $text-color-dark-grey;
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+%list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%top-header-link {
+  font-size: 14px;
+  text-decoration: none;
+  color: $color-white;
+}
+
+%button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+%center-alignment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%space-between-alignment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
