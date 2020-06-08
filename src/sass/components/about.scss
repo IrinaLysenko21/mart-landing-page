@@ -1,0 +1,36 @@
+.about {
+  padding: 90px 0 80px;
+
+  &__list {
+    @extend %list;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list-item {
+    width: 255px;
+    text-align: center;
+
+    &:hover .about__list-item-icon,
+    &:hover .about__list-item-title {
+      color: $color-green;
+    }
+  }
+
+  &__list-item-icon {
+    font-size: 70px;
+    transition: color 200ms linear;
+  }
+
+  &__list-item-title {
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 200ms linear;
+  }
+
+  &__list-item-description {
+    font-weight: 300;
+    font-size: 14px;
+  }
+}

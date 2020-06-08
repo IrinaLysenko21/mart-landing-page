@@ -4,12 +4,6 @@
   list-style: none;
 }
 
-%top-header-link {
-  font-size: 14px;
-  text-decoration: none;
-  color: $color-white;
-}
-
 %button {
   padding: 0;
   cursor: pointer;
@@ -22,8 +16,8 @@
   align-items: center;
 }
 
-%space-between-alignment {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+%top-header-link {
+  font-size: 14px;
+  text-decoration: none;
+  color: $color-white;
 }

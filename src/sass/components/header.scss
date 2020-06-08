@@ -1,9 +1,13 @@
 .header-wrapper {
-  @extend %space-between-alignment;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .top-header {
-  @extend %space-between-alignment;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 14px 0;
   background-color: $color-green;
 }

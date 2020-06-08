@@ -1,0 +1,38 @@
+.section-title {
+  margin: 0 0 24px;
+  text-align: center;
+  font-family: $font-2;
+  font-size: 48px;
+  font-weight: 800;
+  color: $text-color-grey;
+  text-transform: uppercase;
+}
+
+.title-underline {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 76px;
+  width: 164px;
+  height: 7px;
+  background-color: $color-green;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    display: block;
+    width: 164px;
+    height: 2px;
+    background-color: $color-green;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 9px;
+    display: block;
+    width: 164px;
+    height: 2px;
+    background-color: $color-green;
+  }
+}

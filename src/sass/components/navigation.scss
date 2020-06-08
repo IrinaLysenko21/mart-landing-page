@@ -18,5 +18,11 @@
     font-weight: 700;
     color: $text-color-dark-grey;
     text-transform: uppercase;
+    transition: color 200ms linear;
+
+    &:hover,
+    &:focus {
+      color: $color-green;
+    }
   }
 }

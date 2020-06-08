@@ -1,0 +1,167 @@
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @extend %list;
+}
+
+.product {
+  position: relative;
+  margin-bottom: 30px;
+  width: 255px;
+
+  &:hover &__options {
+    opacity: 1;
+  }
+
+  &:hover &__labels {
+    opacity: 0;
+  }
+
+  &:hover &__info {
+    background-color: $color-green;
+  }
+
+  &:nth-last-child(-n + 4) {
+    margin-bottom: 0;
+  }
+
+  &_blue {
+    @extend .product;
+    background-color: $color-blue;
+  }
+
+  &__img {
+    display: block;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 14px;
+    height: 40px;
+    font-family: $font-2;
+    font-weight: 700;
+    color: $color-white;
+    text-transform: uppercase;
+    background-color: $color-grey;
+    transition: background-color 200ms linear;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  &__price {
+    @extend %center-alignment;
+    width: 55px;
+    height: 40px;
+    font-size: 18px;
+    background-color: rgba($color-white, 0.44);
+  }
+
+  &__options {
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    top: 0;
+    padding: 10px;
+    width: 255px;
+    height: 282px;
+    background-color: rgba($color-white, 0.55);
+    transition: opacity 200ms linear;
+  }
+
+  &__options-wrap {
+    @extend %center-alignment;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgba($color-black, 0.55);
+  }
+
+  &__options-btns-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    width: 166px;
+  }
+
+  &__options-btn {
+    @extend %center-alignment;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid $color-white;
+    @extend %button;
+    transition: background-color 200ms linear, border 200ms linear;
+
+    &:hover,
+    &:focus {
+      background-color: $color-green;
+      border: $color-green;
+    }
+  }
+
+  &__cart-btn {
+    @extend %center-alignment;
+    width: 166px;
+    height: 50px;
+    font-size: 14px;
+    color: $color-white;
+    text-transform: uppercase;
+    background-color: $color-grey;
+    border: 1px solid $color-white;
+    @extend %button;
+    transition: background-color 200ms linear, border 200ms linear;
+
+    &:hover,
+    &:focus {
+      background-color: $color-green;
+      border: $color-green;
+    }
+  }
+
+  &__options-btn-icon,
+  &__cart-btn-icon {
+    font-size: 30px;
+    color: $color-white;
+  }
+
+  &__cart-btn-icon {
+    margin-right: 15px;
+  }
+
+  &__labels {
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    width: 255px;
+    height: 282px;
+    transition: opacity 200ms linear;
+  }
+
+  &__label {
+    position: absolute;
+    top: 12px;
+    @extend %center-alignment;
+    width: 70px;
+    height: 30px;
+    font-family: $font-2;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $text-color-light-grey;
+    border: 1px solid $color-black;
+  }
+
+  &__label_new {
+    left: 12px;
+  }
+
+  &__label_sale {
+    right: 12px;
+  }
+}

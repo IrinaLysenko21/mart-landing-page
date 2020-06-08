@@ -1,8 +1,8 @@
 .slider {
   position: relative;
 
-  &__btn-control-prew,
-  &__btn-control-next {
+  &__btn-controls-prew,
+  &__btn-controls-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -13,15 +13,15 @@
     @extend %button;
   }
 
-  &__btn-control-prew {
+  &__btn-controls-prew {
     background-color: rgba($color-green, 0.65);
   }
 
-  &__btn-control-next {
+  &__btn-controls-next {
     right: 0;
   }
 
-  &__btn-control-icon {
+  &__btn-controls-icon {
     font-size: 100px;
     color: $color-white;
   }
