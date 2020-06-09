@@ -16,3 +16,17 @@
     color: $color-green;
   }
 }
+
+.logo-lowercase {
+  display: block;
+  margin-bottom: 18px;
+  font-family: $font-2;
+  font-size: 70px;
+  font-weight: 300;
+  text-decoration: none;
+  color: $color-white;
+
+  &__capital {
+    color: $color-green;
+  }
+}

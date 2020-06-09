@@ -1,0 +1,21 @@
+.social {
+  display: flex;
+  @extend %list;
+
+  &__link {
+    @extend %center-alignment;
+    margin-right: 9px;
+    width: 30px;
+    height: 30px;
+    color: $color-white;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid $color-white;
+    transition: background-color 200ms linear, border 200ms linear;
+
+    &:hover {
+      background-color: $color-green;
+      border: 1px solid $color-green;
+    }
+  }
+}

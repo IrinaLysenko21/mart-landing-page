@@ -2,6 +2,7 @@
 @import 'fonts.scss';
 @import 'font-awesome/fontawesome.scss';
 @import 'font-awesome/fa-solid.scss';
+@import 'font-awesome/fa-brands.scss';
 @import './helpers/variables.scss';
 @import './helpers/placeholders.scss';
 @import 'base.scss';
@@ -15,6 +16,9 @@
 @import './components/cart.scss';
 @import './components/slider.scss';
 @import './components/about.scss';
-@import './components/section.scss';
+@import './components/sections.scss';
 @import './components/section-title.scss';
 @import './components/product.scss';
+@import './components/footer.scss';
+@import './components/contacts.scss';
+@import './components/social.scss';

@@ -11,7 +11,7 @@
 .title-underline {
   position: relative;
   margin: 0 auto;
-  margin-bottom: 76px;
+  margin-bottom: 80px;
   width: 164px;
   height: 7px;
   background-color: $color-green;
@@ -34,5 +34,23 @@
     width: 164px;
     height: 2px;
     background-color: $color-green;
+  }
+}
+
+.section-title_white {
+  @extend .section-title;
+  color: $color-white;
+}
+
+.title-underline_white {
+  @extend .title-underline;
+  background-color: $color-white;
+
+  &::before {
+    background-color: $color-white;
+  }
+
+  &::after {
+    background-color: $color-white;
   }
 }
